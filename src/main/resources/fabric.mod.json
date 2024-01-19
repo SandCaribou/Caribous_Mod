@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "caribous-mod",
+	"version": "${version}",
+	"name": "caribous-mod",
+	"description": "This mod does stuff. As of writing this I do not yet know what exactly though :3",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/caribous-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"carries.modthing.Caribousmod"
+		],
+		"client": [
+			"carries.modthing.CaribousmodClient"
+		],
+		"fabric-datagen": [
+			"carries.modthing.CaribousmodDataGenerator"
+		]
+	},
+	"mixins": [
+		"caribous-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
